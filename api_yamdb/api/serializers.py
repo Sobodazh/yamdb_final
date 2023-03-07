@@ -3,7 +3,6 @@ import re
 from django.core.validators import MaxValueValidator, MinValueValidator
 from rest_framework import serializers
 from rest_framework.validators import UniqueTogetherValidator
-
 from api.fields import CurrentReview, CurrentTitle
 from users.models import User
 from reviews.models import Category, Comment, Genre, Review, Title
