@@ -63,9 +63,9 @@ jobs:
         key: ${{ secrets.SSH_KEY }}
         passphrase: ${{ secrets.PASSPHRASE }}
         script: |
-          sudo docker pull sas1912/api_yamdb
+          sudo docker pull sas1912/api_yamdb:v1
           sudo docker stop $(sudo docker ps -a -q)
-          sudo docker run --rm -d -p 5000:5000 sas1912/api_yamdb
+          sudo docker run --rm -d -p 5000:5000 sas1912/api_yamdb:v1
   
   send_message:
     runs-on: ubuntu-latest
