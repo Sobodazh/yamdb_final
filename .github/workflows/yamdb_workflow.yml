@@ -66,6 +66,7 @@ jobs:
           sudo docker stop $(sudo docker ps -a -q)
           cd yamdb_final/infra
           sudo docker-compose up --build -d
+          
   
   send_message:
     runs-on: ubuntu-latest
