@@ -66,8 +66,6 @@ jobs:
           sudo docker stop $(sudo docker ps -a -q)
           cd yamdb_final/infra
           sudo docker-compose up --build -d
-          sudo docker-compose exec web python manage.py collectstatic --no-input
-          sudo docker-compose exec web python manage.py dumpdata > fixtures.json
 
   
   send_message:
