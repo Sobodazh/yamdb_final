@@ -77,6 +77,7 @@ docker-compose exec web python manage.py dumpdata > fixtures.json
 ```bash
 docker-compose down -v
 ```
-##IP Сервера - 51.250.77.119
+## IP Сервера - 51.250.77.119
+
 ### Документация API YaMDb
 Документация доступна по эндпойнту: http://localhost/redoc/
